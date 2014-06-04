@@ -17,10 +17,10 @@ public class Question1_6 {
 	
 	public static void main(String[] args){
 		
-		int[][] array = new int[5][5];
+		int[][] array = new int[6][6];
 		int count = 0;
-		for (int i = 0; i<5;i++){
-			for (int j = 0; j <5 ; j++){
+		for (int i = 0; i<6;i++){
+			for (int j = 0; j <6 ; j++){
 				array[i][j]=count;
 				count++;
 				if(String.valueOf(count).length()<2){
@@ -34,10 +34,10 @@ public class Question1_6 {
 			System.out.println();
 		}
 		//System.out.println(array[0][0]);
-		rotate90(array, 5);
+		rotate90(array, 6);
 		//System.out.println(array[0][0]);
-		for (int i = 0; i<5;i++){
-			for (int j = 0; j <5 ; j++){
+		for (int i = 0; i<6;i++){
+			for (int j = 0; j <6 ; j++){
 				if(String.valueOf(array[i][j]).length()<2){
 					System.out.print(array[i][j]);
 					System.out.print(' ');
